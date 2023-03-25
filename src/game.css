@@ -1,0 +1,117 @@
+/* :root{
+    --background-color: blue;
+    --board-border-color:burlywood;
+    --panel-background-color: lightgoldenrodyellow;
+    --panel-border-color: burlywood;
+    --player-no-player : white;
+
+} */
+body{
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.app-container{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -400px;
+}
+
+.panel{
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    border: 8px solid burlywood;
+    -webkit-box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
+    z-index: 1;
+}
+.header{
+    left: 50%;
+    top: 90px;
+    height: 80px;
+    width: 300px;
+    margin-left: -120px;
+    background-color: pink;
+}
+.header-text{
+     font-size: 30px;
+     font-weight: bold;
+     width: 250px;
+     margin: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -ms-transform: translate(-50%,-50%);
+     transform: translate(-50%,-50%);
+     text-align: center;
+     color: blue;
+}
+.footer{
+    left: 50%;
+    top: 750px;
+    height: 80px;
+    width: 300px;
+    margin-left: -120px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer button{
+    position: relative;
+    align-content: center;
+    left: 50%;
+    top: 16%;
+    margin-left: -95px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(226, 121, 186);
+    font-size: 30px;
+    -webkit-box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9);
+    box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9);
+    border: 5px solid chocolate;
+    font-weight: bold;
+}
+.footer button:hover{
+    background-color: rgb(85, 77, 196);
+}
+
+.GameBoard{
+    background-color: rgba(255, 0, 0, 0.795);; 
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(4,1fr);
+    padding:20px;
+    width:520px;
+    position :absolute;
+    left:50%;
+    margin-left: -250px;
+    top: 20%;
+    border: 10px solid burlywood;
+    border-radius: 8px;
+    -webkit-box-shadow: 7px 5px 52px 3px rgba(0,0,0,0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);;
+}
+
+.GameCircle{
+    background-color: aliceblue;
+    height:100px;
+    width:100px;
+    margin:10px;
+    border-radius:50%;
+    border: 5px solid rgb(22, 14, 14);
+    -webkit-box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9);
+    box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9);
+}
+.NO_PLAYER{
+    background-color: whitesmoke;
+}
+.player_1{
+    background-color: aqua;
+}
+.player_2{
+    background-color: greenyellow;
+}
